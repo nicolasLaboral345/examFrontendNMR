@@ -10,7 +10,7 @@ This project was generated with:
 
 # Primeros pasos / Instalacion
 
-Por favor intalar una version de node v16.16.0 para evitar cualquier inconveniente, si ya posee esta version ingrese por terminal de comandos 'npm install'.
+Por favor intalar una version de node.js v16.16.0 para evitar cualquier inconveniente, si ya posee esta version ingrese por terminal de comandos 'npm install'.
 
 # Development server / encender el servidor
 ---
