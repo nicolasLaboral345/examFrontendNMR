@@ -55,3 +55,22 @@ footer {
     position: absolute;
 }
 
+.tarjetaContacto{
+    background-color: rgba(24,164,224,0.3);
+    border: 1px solid #222d6d;
+
+}
+
+.tarjetaContacto > p {
+    font-weight: bold;
+    font-size: 16px;
+    padding: 0px ;
+    margin: 0px;
+}
+
+.conten_Contactos {
+    max-height: 720px;
+    overflow-y: scroll;
+    
+}
+

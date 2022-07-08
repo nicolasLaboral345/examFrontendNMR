@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactosServService } from '../contactos-serv.service';
 
 @Component({
   selector: 'app-menu-principal-nav',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuPrincipalNavComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dato: ContactosServService) { }
 
   ngOnInit(): void {
   }
