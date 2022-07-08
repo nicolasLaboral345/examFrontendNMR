@@ -46,6 +46,50 @@ export class ListasComponent implements OnInit {
 
     return edad;
   }
+
+  buscarFNombre(str:any){
+    if(!this.datos.filtroNombre){
+      return false
+    }else{
+      return str.toLowerCase().indexOf(this.datos.filtroNombre.toLowerCase()) >= 0; 
+    }
+  }
+
+  buscarFCorreo(str:any){
+    if(!this.filtroCorreo){
+      return false
+    }else{
+      return str.toLowerCase().indexOf(this.filtroCorreo.toLowerCase()) >= 0; 
+    }
+  }
+  
+  buscarFTelefono(str:any){
+    if(!this.filtroTelefono){
+      return false
+    }else{
+      return str.toLowerCase().indexOf(this.filtroTelefono.toLowerCase()) >= 0; 
+    }
+  }
+  
+  buscarFFecha(str:any){
+    if(!this.filtroFecha){
+      return false
+    }else{
+      return str.toLowerCase().indexOf(this.filtroFecha.toLowerCase()) >= 0; 
+    }
+  }
+  
+  onfilter(nom:any,correo:any,tel:any,fecha:any){
+    if(!this.filtroCorreo && !this.filtroTelefono && !this.filtroFecha && !this.datos.filtroNombre){
+      return true;
+    }else{
+      if(this.buscarFNombre(nom) || this.buscarFCorreo(correo) || this.buscarFTelefono(tel) || this.buscarFFecha(fecha)){
+        return true;
+      }else{
+        return false;
+      }
+    }
+  }
   
 
 

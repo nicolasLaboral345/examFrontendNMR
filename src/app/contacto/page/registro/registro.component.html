@@ -1,1 +1,21 @@
-<p>registro works!</p>
+<div class="container">
+    <div class="m-5">
+        <h2>Crear Nuevo Contacto</h2>
+        <div class="form-control" style="background-color: #222d6d; margin-bottom: 30px;"></div>
+        <label for="nombre">Nombre</label>
+        <input class="form-control me-2" type="text" id="nombre" name="nombre" [(ngModel)]="newC.nombre">
+        <br>
+        <label for="tel">Telefono</label>
+        <input class="form-control me-2" type="number" id="tel" name="tel" [(ngModel)]="newC.telefono">
+        <br>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input class="form-control me-2" type="date" id="fecha" name="fecha" [(ngModel)]="newC.fechaNacimiento">  
+        <br>
+        <label for="dire">Dirección</label>
+        <input class="form-control me-2" type="text" id="dire" name="dire" [(ngModel)]="newC.direccion">
+        <br>
+        <label for="correo">Correo electrónico</label>
+        <input class="form-control me-2" type="email" id="corre" name="correo" [(ngModel)]="newC.correo">
+        <button type="button" class="btn" (click)="guardar()">Crear</button>
+    </div>
+</div>
