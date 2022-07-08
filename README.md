@@ -2,7 +2,9 @@
 
 This project was generated with: 
 -[Angular CLI](https://github.com/angular/angular-cli) version 14.0.5.
+
 -node v16.16.0
+
 -npm v8.11.0
 
 # Primeros pasos / Instalacion
